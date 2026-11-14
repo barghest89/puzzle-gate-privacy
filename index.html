@@ -3,39 +3,74 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
-  <title>Datenschutzerklärung für Puzzle Gate</title>
+  <meta name="description" content="Datenschutzerklärung und Privacy Policy für Puzzle Gate.">
+  <title>Puzzle Gate – Datenschutz / Privacy Policy</title>
   <style>
-    body { max-width: 44rem; margin: 3rem auto; padding: 0 1.25rem; font: 1rem/1.6 system-ui, sans-serif; }
-    h1, h2 { line-height: 1.2; }
+    :root { color-scheme: light dark; }
+    body { max-width: 48rem; margin: 2.5rem auto; padding: 0 1.25rem 3rem; font: 1rem/1.65 system-ui, sans-serif; }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 1.8rem; }
+    nav { display: flex; gap: 1.25rem; margin-bottom: 2rem; }
+    a { color: #347dc0; }
+    section[lang] { scroll-margin-top: 1rem; }
+    hr { margin: 3rem 0; opacity: .3; }
+    .note { padding: .75rem 1rem; border-left: 3px solid #d6a138; background: rgba(214,161,56,.08); }
   </style>
 </head>
 <body>
 <main>
-  <h1>Datenschutzerklärung für Puzzle Gate</h1>
-  <h2>Verantwortlicher und Kontakt</h2>
-  <p>Fabian Blechinger<br><a href="mailto:puzzle-gate-datenschutz@gmail.com">puzzle-gate-datenschutz@gmail.com</a></p>
-
-  <h2>App-Sperre und Android-Bedienungshilfe</h2>
-  <p>Puzzle Gate zeigt startbare Apps an, damit du auswählen kannst, welche Apps du schützen möchtest. Wenn du den Bedienungshilfedienst aktivierst, erkennt Puzzle Gate anhand von Android-Fensterereignissen, ob eine ausgewählte App geöffnet wird, und zeigt die Rätselsperre an. Die App speichert deine Auswahl und Einstellungen auf deinem Gerät. Deine App-Auswahl ist auch Teil eines Google-Drive-Backups, wenn du eines erstellst. Du kannst den Bedienungshilfedienst jederzeit in den Android-Einstellungen deaktivieren.</p>
-
-  <h2>Schachrätsel und Lichess</h2>
-  <p>Puzzle Gate lädt Schachrätsel direkt von Lichess. Bei der Verbindung erhält Lichess technisch erforderliche Verbindungsdaten wie deine IP-Adresse. Wenn du dein Lichess-Konto freiwillig verbindest, öffnet sich die Anmeldung im Browser. Puzzle Gate nutzt deine Lichess-Rätselwertung für die Auswahl passender Rätsel und übermittelt bewertete Lösungsversuche an Lichess. Das Zugriffstoken wird mithilfe des Android Keystore verschlüsselt gespeichert. Beim Trennen der Verbindung widerruft Puzzle Gate das Token. Informationen zu den bei Lichess gespeicherten Daten findest du in der <a href="https://lichess.org/privacy">Datenschutzerklärung von Lichess</a>.</p>
-
-  <h2>Manuelles Backup in Google Drive</h2>
-  <p>Wenn du ein Backup hochlädst oder wiederherstellst, verwendet Puzzle Gate das Google-Konto, das du bei der Autorisierung auswählst. Ein Backup kann deine App-Auswahl, Einstellungen, Trainingsfortschritte, Bestwerte und importierte PGN-Sammlungen enthalten. Die Datei liegt im privaten App-Datenbereich deines Google Drive. Das Backup wird durch deine Aktion ausgelöst. Informationen zur Verarbeitung bei Google findest du in der <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a>.</p>
-
-  <h2>Google Play und Kaufprüfung</h2>
-  <p>Google Play wickelt den Kauf ab. Puzzle Gate sendet das von Google Play erhaltene Kauf-Token an den Puzzle-Gate-Server. Der Server prüft das Token über die Google Play Developer API, um festzustellen, ob die Premium-Funktionen freigeschaltet werden können. Bei der Verbindung fallen technische Verbindungsdaten wie die IP-Adresse an.</p>
-
-  <h2>Aufruf dieser Webseite und Kontaktanfragen</h2>
-  <p>Diese Webseite wird über GitHub Pages bereitgestellt. Beim Abruf verarbeitet GitHub technische Verbindungsdaten wie die IP-Adresse. Weitere Informationen enthält die <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>. Wenn du dich per E-Mail meldest, werden deine Adresse und der Inhalt deiner Nachricht zur Bearbeitung deiner Anfrage verwendet.</p>
-
-  <h2>Lokale Daten löschen</h2>
-  <p>Lokale App-Daten kannst du in den Android-Einstellungen löschen. Löschen auf dem Gerät und Löschen von Daten bei Lichess oder Google sind getrennte Vorgänge.</p>
-
-  <h2>Deine Datenschutzrechte</h2>
-  <p>Nach der DSGVO kannst du unter den jeweiligen Voraussetzungen Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit verlangen. Du kannst einer Verarbeitung unter den gesetzlichen Voraussetzungen widersprechen, eine erteilte Einwilligung für die Zukunft widerrufen und dich bei einer Datenschutzaufsichtsbehörde beschweren. Für Anfragen kannst du den oben angegebenen Datenschutzkontakt verwenden.</p>
+  <nav aria-label="Language / Sprache"><a href="#de">Deutsch</a><a href="#en">English</a></nav>
+  <section id="de" lang="de">
+    <h1>Datenschutzerklärung für Puzzle Gate</h1>
+    <p>Stand: 14. November 2026</p>
+    <h2>1. Verantwortlicher und Kontakt</h2>
+    <p>Fabian Blechinger<br>E-Mail: <a href="mailto:puzzle-gate-datenschutz@gmail.com">puzzle-gate-datenschutz@gmail.com</a></p>
+    <h2>2. Welche Daten verarbeitet die App?</h2>
+    <p><strong>App-Sperre und Bedienungshilfedienst:</strong> Puzzle Gate zeigt die auf dem Gerät startbaren Apps an, damit du Apps zum Schutz auswählen kannst. Nach deiner ausdrücklichen Aktivierung erkennt der Android-Bedienungshilfedienst anhand von App- und Fensterereignissen, welche App im Vordergrund ist, und zeigt bei geschützten Apps eine Rätselsperre an. Für diese Funktion verarbeitet die App Paketkennungen, Fensterinformationen, ausgewählte Apps und Freigabezeiten. Bei geschützten Apps kann sie außerdem deren Bild-in-Bild-Fenster erkennen und schließen. Die dabei verwendeten App-Kennungen und Freigabezeiten werden lokal gespeichert; der Bedienungshilfedienst übermittelt sie nicht selbst an unseren Server. Du kannst den Dienst jederzeit in den Android-Einstellungen deaktivieren.</p>
+    <p><strong>Lokale Einstellungen und Training:</strong> Puzzle Gate speichert unter anderem deine App-Auswahl, Schutzregeln, Spracheinstellungen, Trainingsfortschritte, persönliche Bestwerte und gegebenenfalls importierte PGN-Schachpartien auf deinem Gerät. Für die App-Sperre ist keine Anmeldung bei Lichess erforderlich.</p>
+    <h2>3. Schachrätsel und freiwillige Lichess-Verbindung</h2>
+    <p>Puzzle Gate ruft Schachrätsel von <a href="https://lichess.org/">Lichess</a> ab. Dabei erhält Lichess technisch notwendige Verbindungsdaten, insbesondere deine IP-Adresse. Wenn du freiwillig dein Lichess-Konto verbindest, erfolgt die Anmeldung über den Browser. Puzzle Gate kann deine Rätselwertung zur Auswahl passender Aufgaben verwenden und bewertete Lösungsversuche an Lichess übermitteln. Das Zugriffstoken wird geschützt im Android-Keystore-gestützten Speicher abgelegt; beim Trennen der Verbindung versucht die App, das Token zu widerrufen. Einzelheiten: <a href="https://lichess.org/privacy">Datenschutz bei Lichess</a>.</p>
+    <h2>4. Google Drive: manuelle Backups und optionale automatische Synchronisierung</h2>
+    <p>Wenn du Google Drive autorisierst, kann Puzzle Gate Sicherungen im privaten App-Datenbereich deines Google Drive erstellen und wiederherstellen. Diese können App-Auswahl, Einstellungen, Trainingsfortschritte, Bestwerte und importierte PGN-Sammlungen enthalten. Du kannst Backups manuell auslösen oder die automatische Synchronisierung aktivieren. Ist sie aktiviert, prüft die App bei geeigneten Gelegenheiten, etwa beim Start, bei Rückkehr in die App und nach Änderungen, den Synchronisierungsstand und kann Daten hochladen. Bei widersprüchlichen Daten fragt die App nach deiner Entscheidung, bevor sie eine Version übernimmt. Die automatische Synchronisierung ist standardmäßig ausgeschaltet und lässt sich in der App deaktivieren. Die Speicherung in Google Drive unterliegt auch den Bedingungen deines Google-Kontos. <a href="https://policies.google.com/privacy?hl=de">Datenschutz bei Google</a>.</p>
+    <h2>5. Google Play und Kaufprüfung</h2>
+    <p>In-App-Käufe werden über Google Play abgewickelt. Zur Überprüfung einer Premium-Berechtigung übermittelt Puzzle Gate das von Google Play erhaltene Kauf-Token an einen Puzzle-Gate-Prüfserver. Dieser prüft es über die Google Play Developer API. Bei der Serververbindung werden technisch notwendige Verbindungsdaten, etwa die IP-Adresse, verarbeitet. Zahlungsdaten wie deine Kreditkartennummer werden nicht von Puzzle Gate entgegengenommen. <a href="https://policies.google.com/privacy?hl=de">Datenschutz bei Google</a>.</p>
+    <h2>6. Optionale GitHub-Verbindung für private Updates</h2>
+    <p>Falls die Funktion für private Updates in deiner App-Version angeboten wird und du sie verwendest, kannst du dein GitHub-Konto über den GitHub-Geräteautorisierungsprozess verbinden. Die App verwendet die erteilte Berechtigung, um private Releases und Update-Dateien über die GitHub-API abzurufen. GitHub-Zugriffs- und gegebenenfalls Aktualisierungstokens werden im geschützten Speicher des Geräts abgelegt und beim Trennen der Verbindung lokal gelöscht. Die angeforderte GitHub-Berechtigung umfasst den Scope <code>repo</code>, der weiter reicht als das reine Lesen eines einzelnen Releases. Verwende diese Verbindung daher nur, wenn du ihr vertraust. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutz bei GitHub</a>.</p>
+    <h2>7. Rechtsgrundlagen und Freiwilligkeit</h2>
+    <p>Soweit die DSGVO anwendbar ist, erfolgt die Verarbeitung der für die von dir gewählten App-Funktionen notwendigen Daten grundsätzlich zur Bereitstellung der gewünschten Funktionen (Art. 6 Abs. 1 lit. b DSGVO). Freiwillige Verbindungen zu Lichess, Google Drive und GitHub werden erst nach deiner jeweiligen Aktivierung genutzt. Soweit eine Verarbeitung auf einer Einwilligung beruht (Art. 6 Abs. 1 lit. a DSGVO), kannst du diese mit Wirkung für die Zukunft widerrufen. Technisch erforderliche Verarbeitung beim Betrieb dieser Webseite kann auf berechtigten Interessen (Art. 6 Abs. 1 lit. f DSGVO) beruhen. Für eigenständige Verarbeitungen durch Google, Lichess und GitHub gelten deren Datenschutzhinweise.</p>
+    <h2>8. Speicherung, Löschung und Empfänger</h2>
+    <p>Lokale Einstellungen und Trainingsdaten bleiben grundsätzlich auf deinem Gerät, bis du sie in der App beziehungsweise durch Löschen der App-Daten entfernst. Google-Drive-Sicherungen bleiben in deinem Google-Konto, bis du sie dort löschst; das Löschen lokaler Daten entfernt sie nicht automatisch. Das Trennen von Lichess oder GitHub entfernt die lokal gespeicherten Zugangsdaten, löscht aber nicht automatisch die bei diesen Diensten gespeicherten Kontodaten. Kauf- und Transaktionsinformationen bei Google Play unterliegen den dortigen Aufbewahrungsregeln. Bei Netzwerkzugriffen können die jeweiligen Dienstanbieter technisch notwendige Verbindungsdaten verarbeiten; deren konkrete Aufbewahrungsfristen bestimmen sich nach den jeweiligen Diensten. Puzzle Gate setzt nach dem hier beschriebenen Funktionsumfang keine eigenen Werbe- oder Analyse-SDKs ein.</p>
+    <h2>9. Webseite und E-Mail-Kontakt</h2>
+    <p>Diese Datenschutzerklärung wird über GitHub Pages bereitgestellt. GitHub verarbeitet beim Abruf technisch notwendige Verbindungsdaten wie die IP-Adresse. Wenn du uns per E-Mail kontaktierst, verarbeiten wir deine E-Mail-Adresse und deine Nachricht, um die Anfrage zu beantworten. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutz bei GitHub</a>.</p>
+    <h2>10. Deine Rechte</h2>
+    <p>Nach Maßgabe der DSGVO hast du insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Eine erteilte Einwilligung kannst du mit Wirkung für die Zukunft widerrufen. Du kannst dich außerdem bei einer zuständigen Datenschutzaufsichtsbehörde beschweren. Wende dich bei Fragen oder zur Ausübung deiner Rechte an die oben genannte E-Mail-Adresse.</p>
+  </section>
+  <hr>
+  <section id="en" lang="en">
+    <h1>Privacy Policy for Puzzle Gate</h1>
+    <p>Last updated: November 14, 2026</p>
+    <h2>1. Controller and contact</h2>
+    <p>Fabian Blechinger<br>Email: <a href="mailto:puzzle-gate-datenschutz@gmail.com">puzzle-gate-datenschutz@gmail.com</a></p>
+    <h2>2. Data processed by the app</h2>
+    <p><strong>App protection and Accessibility Service:</strong> Puzzle Gate lists launchable apps so you can choose which ones to protect. Once you explicitly enable the Android Accessibility Service, it uses app and window events to identify the foreground app and display a chess-puzzle gate for protected apps. This involves app package identifiers, window information, your protected-app selection and unlock times. For protected apps, it may also identify and dismiss picture-in-picture windows. The app identifiers and unlock times used for this feature are stored locally; the Accessibility Service itself does not send them to our server. You can disable the service at any time in Android settings.</p>
+    <p><strong>Local settings and training:</strong> Puzzle Gate stores your protected-app selection, rules, language preferences, training progress, personal bests and any imported PGN chess games on your device. A Lichess account is not required to use app protection.</p>
+    <h2>3. Chess puzzles and optional Lichess connection</h2>
+    <p>Puzzle Gate retrieves chess puzzles from <a href="https://lichess.org/">Lichess</a>. Lichess receives technical connection information, including your IP address. If you choose to connect your Lichess account, sign-in takes place in your browser. Puzzle Gate may use your puzzle rating to select suitable puzzles and submit rated puzzle attempts to Lichess. The access token is stored using Android Keystore-backed protected storage. When you disconnect, the app attempts to revoke the token. See the <a href="https://lichess.org/privacy">Lichess privacy policy</a>.</p>
+    <h2>4. Google Drive: manual backups and optional automatic sync</h2>
+    <p>After you authorize Google Drive, Puzzle Gate can back up and restore data in your Drive account's private app-data folder. Backups may contain protected-app selections, settings, training progress, personal bests and imported PGN collections. You can create backups manually or enable automatic synchronization. When enabled, the app may check and upload changes at suitable times, such as startup, app resume and after changes. If local and cloud data conflict, the app asks you which version to keep. Automatic sync is off by default and can be disabled in the app. Your Google Drive data is also governed by your Google account terms. See the <a href="https://policies.google.com/privacy">Google privacy policy</a>.</p>
+    <h2>5. Google Play and purchase verification</h2>
+    <p>Google Play processes in-app purchases. To verify premium access, Puzzle Gate sends the purchase token supplied by Google Play to a Puzzle Gate verification server, which checks it using the Google Play Developer API. Technical connection data such as your IP address is processed during this request. Puzzle Gate does not receive your credit card number. See the <a href="https://policies.google.com/privacy">Google privacy policy</a>.</p>
+    <h2>6. Optional GitHub connection for private updates</h2>
+    <p>If private updates are available in your app version and you use this feature, you can connect your GitHub account through GitHub's device authorization flow. The app uses the authorization to access private releases and download update files via the GitHub API. GitHub access and refresh tokens, where applicable, are stored in protected device storage and deleted locally when you disconnect. The requested GitHub permission uses the <code>repo</code> scope, which is broader than read-only access to a single release. Only authorize this connection if you trust it. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>.</p>
+    <h2>7. Legal bases and optional features</h2>
+    <p>Where the GDPR applies, data needed to provide the app features you request is generally processed to provide those features (Article 6(1)(b) GDPR). Optional Lichess, Google Drive and GitHub integrations are used only after you enable them. Where processing relies on consent (Article 6(1)(a) GDPR), you may withdraw it for the future. Technical processing needed to serve this website may rely on legitimate interests (Article 6(1)(f) GDPR). Google, Lichess and GitHub provide their own notices for processing under their responsibility.</p>
+    <h2>8. Storage, deletion and recipients</h2>
+    <p>Local settings and training data generally remain on your device until you remove them through the app or clear the app's data. Google Drive backups remain in your Google account until deleted there; clearing local data does not automatically delete them. Disconnecting Lichess or GitHub removes locally stored credentials but does not automatically delete data in those services' accounts. Google Play retains purchase information according to its own rules. When connecting to external services, the providers may process technical connection data under their own retention policies. Based on the functionality described here, Puzzle Gate does not include its own advertising or analytics SDKs.</p>
+    <h2>9. This website and email inquiries</h2>
+    <p>This policy is hosted on GitHub Pages. GitHub processes technical connection information, such as your IP address, when you visit. If you email us, we process your email address and message to respond. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>.</p>
+    <h2>10. Your rights</h2>
+    <p>Subject to the GDPR's requirements, you may have rights of access, rectification, erasure, restriction, portability and objection. You may withdraw consent for future processing and lodge a complaint with a competent data protection authority. Contact the email address above with questions or requests.</p>
+  </section>
 </main>
 </body>
 </html>
